@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login form using Material Design - Demo by W3lessons</title>
+  <!-- CORE CSS-->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+<style type="text/css">
+html,
+body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.margin {
+  margin: 0 !important;
+}
+</style>
+  
+</head>
+
+<body >
+
+<button type="button" class="btn btn-primary" onclick="googleSignIn()"> Google SignIn</button>
+<button type="button" class="btn btn-primary" onclick="googleSignOut()">Sign out</button>
+ 
+<!-- Adding firebase support -->
+<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+<script type="text/javascript">
+var config = {
+    apiKey: "AIzaSyCedYu450YSgHDVoWqNUGjE6bn0EqULe10",
+    authDomain: "authentication-3f25e.firebaseapp.com",
+    databaseURL: "https://authentication-3f25e.firebaseio.com",
+    projectId: "authentication-3f25e",
+    storageBucket: "authentication-3f25e.appspot.com",
+    messagingSenderId: "208790233713"
+  };
+  firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="https://apis.google.cpm/js/platform.js" async defer></script>
+   <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
